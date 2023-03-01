@@ -22,7 +22,6 @@ const todos = [
 const TodosLogic = () => (
   <>
     <InputTodo />
-    <br />
     <TodosList todosProps={todos} />
   </>
 );
