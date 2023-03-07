@@ -1,3 +1,4 @@
+/* eslint-disable no-param-reassign */
 /* eslint-disable import/no-extraneous-dependencies */
 import { useState } from 'react';
 import { v4 as uuidv4 } from 'uuid';
@@ -25,17 +26,15 @@ function TodosLogic() {
   ]);
 
   const handleChange = (id) => {
-    setTodos((prevState) =>
-      prevState.map((todo) => {
-        if (todo.id === id) {
-          return {
-            ...todo,
-            completed: !todo.completed,
-          };
-        }
-        return todo;
-      })
-    );
+    setTodos((prevState) => prevState.map((todo) => {
+      if (todo.id === id) {
+        return {
+          ...todo,
+          completed: !todo.completed,
+        };
+      }
+      return todo;
+    }));
   };
 
   const addTodoItem = (title) => {
@@ -58,7 +57,7 @@ function TodosLogic() {
           todo.title = updatedTitle;
         }
         return todo;
-      })
+      }),
     );
   };
 

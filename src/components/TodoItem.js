@@ -3,7 +3,9 @@ import PropTypes from 'prop-types';
 import { useState } from 'react';
 import styles from '../styles/TodoItem.module.css';
 
-function TodoItem({ itemProp, handleChange, deleteTodo, setUpdate }) {
+function TodoItem({
+  itemProp, handleChange, deleteTodo, setUpdate,
+}) {
   const completedStyle = {
     fontStyle: 'italic',
     color: '#595959',
@@ -25,6 +27,12 @@ function TodoItem({ itemProp, handleChange, deleteTodo, setUpdate }) {
     editMode.display = 'none';
   }
 
+  const handleUpdatedDone = (event) => {
+    if (event.key === 'Enter') {
+      setEditing(false);
+    }
+  };
+
   return (
     <li className={styles.item}>
       <div className={styles.content} style={viewMode}>
@@ -39,7 +47,8 @@ function TodoItem({ itemProp, handleChange, deleteTodo, setUpdate }) {
         </button>
         <button type="button" onClick={() => deleteTodo(itemProp.id)}>
           Delete
-        </button>{' '}
+        </button>
+        {' '}
         &nbsp;&nbsp;
         <span style={itemProp.completed ? completedStyle : null}>
           {itemProp.title}
@@ -51,6 +60,7 @@ function TodoItem({ itemProp, handleChange, deleteTodo, setUpdate }) {
         className={styles.textInput}
         style={editMode}
         onChange={(e) => setUpdate(e.target.value, itemProp.id)}
+        onKeyDown={handleUpdatedDone}
       />
     </li>
   );
