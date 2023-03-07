@@ -1,6 +1,10 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import PropTypes from 'prop-types';
 import { useState } from 'react';
+
+import { FaTrash } from 'react-icons/fa';
+import { AiFillEdit } from 'react-icons/ai';
+
 import styles from '../styles/TodoItem.module.css';
 
 function TodoItem({
@@ -43,10 +47,10 @@ function TodoItem({
         />
         &nbsp;&nbsp;
         <button type="button" onClick={handleEditing}>
-          Edit
+          <AiFillEdit />
         </button>
         <button type="button" onClick={() => deleteTodo(itemProp.id)}>
-          Delete
+          <FaTrash />
         </button>
         {' '}
         &nbsp;&nbsp;

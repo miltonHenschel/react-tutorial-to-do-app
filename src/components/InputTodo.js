@@ -1,5 +1,7 @@
+/* eslint-disable import/no-extraneous-dependencies */
 import { useState } from 'react';
 import PropTypes from 'prop-types';
+import { FaPlusCircle } from 'react-icons/fa/';
 
 function InputTodo({ addTodoItem }) {
   const [title, setTitle] = useState('');
@@ -31,7 +33,7 @@ function InputTodo({ addTodoItem }) {
           className="input-text"
         />
         <button type="submit" className="input-submit">
-          Submit
+          <FaPlusCircle />
         </button>
       </form>
       <span className="submit-warning">{message}</span>
