@@ -25,15 +25,17 @@ function TodosLogic() {
   ]);
 
   const handleChange = (id) => {
-    setTodos((prevState) => prevState.map((todo) => {
-      if (todo.id === id) {
-        return {
-          ...todo,
-          completed: !todo.completed,
-        };
-      }
-      return todo;
-    }));
+    setTodos((prevState) =>
+      prevState.map((todo) => {
+        if (todo.id === id) {
+          return {
+            ...todo,
+            completed: !todo.completed,
+          };
+        }
+        return todo;
+      })
+    );
   };
 
   const addTodoItem = (title) => {
@@ -49,6 +51,17 @@ function TodosLogic() {
     setTodos([...todos.filter((todo) => todo.id !== id)]);
   };
 
+  const setUpdate = (updatedTitle, id) => {
+    setTodos(
+      todos.map((todo) => {
+        if (todo.id === id) {
+          todo.title = updatedTitle;
+        }
+        return todo;
+      })
+    );
+  };
+
   return (
     <>
       <InputTodo addTodoItem={addTodoItem} />
@@ -56,6 +69,7 @@ function TodosLogic() {
         todosProps={todos}
         handleChange={handleChange}
         deleteTodo={deleteTodo}
+        setUpdate={setUpdate}
       />
     </>
   );
