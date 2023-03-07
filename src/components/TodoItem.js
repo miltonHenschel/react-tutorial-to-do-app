@@ -17,9 +17,17 @@ function TodoItem({ itemProp, handleChange, deleteTodo }) {
     setEditing(true);
   };
 
+  const viewMode = {};
+  const editMode = {};
+  if (editing) {
+    viewMode.display = 'none';
+  } else {
+    editMode.display = 'none';
+  }
+
   return (
     <li className={styles.item}>
-      <div className={styles.content}>
+      <div className={styles.content} style={viewMode}>
         <input
           type="checkbox"
           checked={itemProp.completed}
@@ -31,14 +39,18 @@ function TodoItem({ itemProp, handleChange, deleteTodo }) {
         </button>
         <button type="button" onClick={() => deleteTodo(itemProp.id)}>
           Delete
-        </button>
-        {' '}
+        </button>{' '}
         &nbsp;&nbsp;
         <span style={itemProp.completed ? completedStyle : null}>
           {itemProp.title}
         </span>
       </div>
-      <input type="text" value={itemProp.title} className={styles.textInput} />
+      <input
+        type="text"
+        value={itemProp.title}
+        className={styles.textInput}
+        style={editMode}
+      />
     </li>
   );
 }
