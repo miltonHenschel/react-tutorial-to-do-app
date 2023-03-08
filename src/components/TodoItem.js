@@ -1,4 +1,3 @@
-/* eslint-disable import/no-extraneous-dependencies */
 import PropTypes from 'prop-types';
 import { useState } from 'react';
 
@@ -7,9 +6,7 @@ import { AiFillEdit } from 'react-icons/ai';
 
 import styles from '../styles/TodoItem.module.css';
 
-function TodoItem({
-  itemProp, handleChange, deleteTodo, setUpdate,
-}) {
+function TodoItem({ itemProp, handleChange, deleteTodo, setUpdate }) {
   const completedStyle = {
     fontStyle: 'italic',
     color: '#595959',
@@ -51,8 +48,7 @@ function TodoItem({
         </button>
         <button type="button" onClick={() => deleteTodo(itemProp.id)}>
           <FaTrash />
-        </button>
-        {' '}
+        </button>{' '}
         &nbsp;&nbsp;
         <span style={itemProp.completed ? completedStyle : null}>
           {itemProp.title}
