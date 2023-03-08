@@ -2,7 +2,9 @@ import PropTypes from 'prop-types';
 
 import TodoItem from './TodoItem';
 
-const TodosList = ({ todosProps, handleChange, deleteTodo, setUpdate }) => (
+const TodosList = ({
+  todosProps, handleChange, deleteTodo, setUpdate,
+}) => (
   <>
     {/* <div>TodosList content</div> */}
     <ul>
