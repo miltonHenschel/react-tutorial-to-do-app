@@ -1,33 +1,12 @@
-<a name="readme-top"></a>
 
-<!--
-HOW TO USE:
-This is an example of how you may give instructions on setting up your project locally.
-
-Modify this file to match your project and remove sections that don't apply.
-
-REQUIRED SECTIONS:
-- Table of Contents
-- About the Project
-  - Built With
-  - Live Demo
-- Getting Started
-- Authors
-- Future Features
-- Contributing
-- Show your support
-- Acknowledgements
-- License
-
-After you're finished please remove all the comments and instructions!
--->
 
 <div align="center">
 
+<!--
   <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
   <br/>
 
-  <h3><b>Microverse README Template</b></h3>
+  <h3><b>Math Magicians App</b></h3>
 
 </div>
 
@@ -36,17 +15,20 @@ After you're finished please remove all the comments and instructions!
 # 📗 Table of Contents
 
 - [📖 About the Project](#about-project)
-  - [🛠 Built With](#built-with)
-    - [Tech Stack](#tech-stack)
-    - [Key Features](#key-features)
-  - [🚀 Live Demo](#live-demo)
+   - [🛠 Built With](#built-with)
+      - [Tech Stack](#tech-stack)
+      - [Key Features](#key-features)
+
+   - [🚀 Live Demo](#live-demo)
+
 - [💻 Getting Started](#getting-started)
-  - [Setup](#setup)
-  - [Prerequisites](#prerequisites)
-  - [Install](#install)
-  - [Usage](#usage)
-  - [Run tests](#run-tests)
-  - [Deployment](#triangular_flag_on_post-deployment)
+   - [Setup](#setup)
+   - [Prerequisites](#prerequisites)
+   - [Install](#install)
+   - [Usage](#usage)
+   - [Run tests](#run-tests)
+   - [Deployment](#deployment)
+
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
@@ -57,25 +39,24 @@ After you're finished please remove all the comments and instructions!
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [your_project_name] <a name="about-project"></a>
+# 📖 Math Magicians App 
 
-> Describe your project in 1 or 2 sentences.
+**Math Magicians App** is a Single Page App (SPA) website for all fans of mathematics which allows users to make simple calculations and read a random math-related quote.
 
-**[your_project__name]** is a...
+## 🛠 Built With 
 
-## 🛠 Built With <a name="built-with"></a>
-
-### Tech Stack <a name="tech-stack"></a>
-
-> Describe the tech stack and include only the relevant sections that apply to your project.
+### Tech Stack 
 
 <details>
   <summary>Client</summary>
   <ul>
-    <li><a href="https://reactjs.org/">React.js</a></li>
+<li><a href="https://www.w3.org/html/" target="_blank"><img align="center" src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/html-icon.svg" alt="html5" width="55" height="55"/></a></li>
+<li><a href="https://www.w3schools.com/css/" target="_blank"><img align="center" src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/css-icon.svg" alt="css3" width="55" height="55"/></a></li>
+<li><a href="https://reactjs.org/" target="_blank"><img align="center" src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/react-js-icon.svg" alt="react js" width="55" height="55"/></a></li>
   </ul>
 </details>
 
+<!--
 <details>
   <summary>Server</summary>
   <ul>
@@ -92,31 +73,27 @@ After you're finished please remove all the comments and instructions!
 
 <!-- Features -->
 
-### Key Features <a name="key-features"></a>
+### Key Features 
 
-> Describe between 1-3 key features of the application.
-
-- **[key_feature_1]**
-- **[key_feature_2]**
-- **[key_feature_3]**
+- **Make simple calculations.**
+- **Read a random math-related quote.**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LIVE DEMO -->
 
-## 🚀 Live Demo <a name="live-demo"></a>
+## 🚀 Live Demo 
 
-> Add a link to your deployed project.
+- [Live Demo Link](https://miltonhenschel.github.io/math-magicians-app/)
 
-- [Live Demo Link](https://yourdeployedapplicationlink.com)
+<!--  
+- [Video presentation](https://www.loom.com/share/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
 
-## 💻 Getting Started <a name="getting-started"></a>
-
-> Describe how a new developer could make use of your project.
+## 💻 Getting Started 
 
 To get a local copy up and running, follow these steps.
 
@@ -124,113 +101,95 @@ To get a local copy up and running, follow these steps.
 
 In order to run this project you need:
 
-<!--
-Example command:
-
-```sh
- gem install rails
-```
- -->
+- [ ] A PC running any operating system like Windows, Linux, or MacOS
+- [ ] An Internet connection
+- [ ] Knowledge of some basic Git commands
+- [ ] A browser like Brave, Google Chrome, Mozilla Firefox or Microsoft Edge
+- [ ] Git installed
 
 ### Setup
 
-Clone this repository to your desired folder:
-
-<!--
-Example commands:
+- [ ] Clone this repository to your desired folder:
 
 ```sh
-  cd my-folder
-  git clone git@github.com:myaccount/my-project.git
+git clone https://github.com/miltonHenschel/math-magicians-app.git
+
 ```
---->
+
+```sh
+cd math-magicians-app
+
+```
+
+- [ ] Open the file in your code editor
+
+```text
+code .
+
+```
 
 ### Install
 
-Install this project with:
-
-<!--
-Example command:
+- [ ] Create a react app:
 
 ```sh
-  cd my-project
-  gem install
+npx create-react-app .
+
 ```
---->
 
 ### Usage
 
 To run the project, execute the following command:
 
-<!--
-Example command:
-
 ```sh
-  rails server
+npm start
+
 ```
---->
 
 ### Run tests
 
 To run tests, run the following command:
 
-<!--
-Example command:
+```text
+npm test
 
-```sh
-  bin/rails test test/models/article_test.rb
 ```
---->
 
 ### Deployment
 
-You can deploy this project using:
-
-<!--
-Example:
+You can build this project using:
 
 ```sh
+npm run build
 
 ```
- -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- AUTHORS -->
 
-## 👥 Authors <a name="authors"></a>
+## 👥 Authors 
 
-> Mention all of the collaborators of this project.
+👥 **Henschel Nketchogue M.**
 
-👤 **Author1**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [miltonHenschel](https://github.com/miltonHenschel)
+- LinkedIn: [henschelnketchoguem](https://www.linkedin.com/in/henschelnketchoguem/)
+- Twitter: [nketchogue](https://twitter.com/nketchogue)
+- Instagram: [mpatchiehenschel](https://www.instagram.com/mpatchiehenschel/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
 
-## 🔭 Future Features <a name="future-features"></a>
+## 🔭 Future Features 
 
-> Describe 1 - 3 features you will add to the project.
-
-- [ ] **[new_feature_1]**
-- [ ] **[new_feature_2]**
-- [ ] **[new_feature_3]**
+- [ ] **Improve design.**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- CONTRIBUTING -->
 
-## 🤝 Contributing <a name="contributing"></a>
+## 🤝 Contributing 
 
 Contributions, issues, and feature requests are welcome!
 
@@ -240,9 +199,7 @@ Feel free to check the [issues page](../../issues/).
 
 <!-- SUPPORT -->
 
-## ⭐️ Show your support <a name="support"></a>
-
-> Write a message to encourage readers to support your project
+## ⭐️ Show your support 
 
 If you like this project...
 
@@ -250,20 +207,17 @@ If you like this project...
 
 <!-- ACKNOWLEDGEMENTS -->
 
-## 🙏 Acknowledgments <a name="acknowledgements"></a>
+## 🙏 Acknowledgments 
 
-> Give credit to everyone who inspired your codebase.
-
-I would like to thank...
+I would like to thank **![](https://img.shields.io/badge/Microverse-blueviolet).**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FAQ (optional) -->
 
-## ❓ FAQ <a name="faq"></a>
+## ❓ FAQ 
 
-> Add at least 2 questions new developers would ask when they decide to use your project.
-
+<!--
 - **[Question_1]**
 
   - [Answer_1]
@@ -276,10 +230,8 @@ I would like to thank...
 
 <!-- LICENSE -->
 
-## 📝 License <a name="license"></a>
+## 📝 License 
 
-This project is [MIT](./LICENSE) licensed.
-
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
+This project is [MIT](./MIT.md) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
