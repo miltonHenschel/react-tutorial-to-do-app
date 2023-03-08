@@ -1,5 +1,5 @@
 {
-  "homepage": "https://miltonhenschel.github.io/react-tutorial-to-do-app",
+  "homepage": ".",
   "name": "react-project-no-cra",
   "version": "1.0.0",
   "description": "Todo app with React",
@@ -8,12 +8,14 @@
     "start": "webpack serve --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build -b master",
+    "build:staging": "env-cmd -f .env.staging npm run build"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "env-cmd": "^10.1.0",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
