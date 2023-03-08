@@ -18,7 +18,7 @@ function Navbar() {
             <button type="button" onClick={() => setDropdown((prev) => !prev)}>
               Services
               {' '}
-              <span>&#8595;</span>
+              <span>&darr;</span>
             </button>
             {dropdown && (
               <ul>
